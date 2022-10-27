@@ -40,8 +40,6 @@ import React from 'react'
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Tooltip, Filler)
 
-const random = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1) + min)
-
 const Home: NextPage = () => (
   <AdminLayout>
     <div className="row">
@@ -424,7 +422,7 @@ const Home: NextPage = () => (
             marginTop: '40px',
           }}
         >
-          <Line
+          {/* <Line
             data={{
               labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
               datasets: [{
@@ -500,7 +498,7 @@ const Home: NextPage = () => (
                 },
               },
             }}
-          />
+          /> */}
         </div>
       </Card.Body>
       <Card.Footer>
