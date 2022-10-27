@@ -45,7 +45,7 @@ const random = (min: number, max: number) => Math.floor(Math.random() * (max - m
 const Home: NextPage = () => (
   <AdminLayout>
     <div className="row">
-      {/* <div className="col-sm-6 col-lg-3">
+      <div className="col-sm-6 col-lg-3">
         <Card bg="primary" text="white" className="mb-4">
           <Card.Body className="pb-0 d-flex justify-content-between align-items-start">
             <div>
@@ -370,7 +370,7 @@ const Home: NextPage = () => (
             />
           </div>
         </Card>
-      </div> */}
+      </div>
     </div>
 
     {/* <Card className="mb-4">
