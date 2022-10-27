@@ -373,7 +373,7 @@ const Home: NextPage = () => (
       </div> */}
     </div>
 
-    <Card className="mb-4">
+    {/* <Card className="mb-4">
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
@@ -552,7 +552,7 @@ const Home: NextPage = () => (
           </div>
         </div>
       </Card.Footer>
-    </Card>
+    </Card> */}
 
     <div className="row">
       <div className="col-sm-6 col-lg-4">
