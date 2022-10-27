@@ -1,23 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faAddressCard,
+import {  
   faBell,
   faFileLines,
   faStar,
   IconDefinition,
 } from '@fortawesome/free-regular-svg-icons'
-import {
-  faBug,
-  faCalculator,
+import {  
   faChartPie,
-  faChevronUp, faCode,
-  faDroplet,
+  faChevronUp, 
+  faCode,  
   faGauge,
   faLayerGroup,
   faLocationArrow,
-  faPencil,
   faPuzzlePiece,
-  faRightToBracket,
 } from '@fortawesome/free-solid-svg-icons'
 import React, {
   PropsWithChildren, useContext, useEffect, useState,
@@ -67,8 +62,7 @@ type SidebarNavGroupToggleProps = {
   setIsShow: (isShow: boolean) => void;
 } & PropsWithChildren
 
-const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
-  // https://react-bootstrap.github.io/components/accordion/#custom-toggle-with-expansion-awareness
+const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {  
   const { activeEventKey } = useContext(AccordionContext)
   const {
     eventKey, icon, children, setIsShow,
@@ -137,77 +131,28 @@ export default function SidebarNav() {
         Sample
         <small className="ms-auto"><Badge bg="danger" className="ms-auto">DEMO</Badge></small>
       </SidebarNavItem>
-      <SidebarNavTitle>Theme</SidebarNavTitle>
-      <SidebarNavItem icon={faDroplet} href="colors.html">Colors</SidebarNavItem>
-      <SidebarNavItem icon={faPencil} href="typography.html">Typography</SidebarNavItem>
-      <SidebarNavTitle>Components</SidebarNavTitle>
+      <SidebarNavTitle>Menu Items</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText="Base">
-        <SidebarNavItem href="base/accordion.html">Accordion</SidebarNavItem>
-        <SidebarNavItem href="base/breadcrumb.html">Breadcrumb</SidebarNavItem>
-        <SidebarNavItem href="base/cards.html">Cards</SidebarNavItem>
-        <SidebarNavItem href="base/carousel.html">Carousel</SidebarNavItem>
-        <SidebarNavItem href="base/collapse.html">Collapse</SidebarNavItem>
-        <SidebarNavItem href="base/list-group.html">List group</SidebarNavItem>
-        <SidebarNavItem href="base/navs.html">Navs</SidebarNavItem>
-        <SidebarNavItem href="base/pagination.html">Pagination</SidebarNavItem>
-        <SidebarNavItem href="base/popovers.html">Popovers</SidebarNavItem>
-        <SidebarNavItem href="base/progress.html">Progress</SidebarNavItem>
-        <SidebarNavItem href="base/scrollspy.html">Scrollspy</SidebarNavItem>
-        <SidebarNavItem href="base/spinners.html">Spinners</SidebarNavItem>
-        <SidebarNavItem href="base/tables.html">Tables</SidebarNavItem>
-        <SidebarNavItem href="base/tabs.html">Tabs</SidebarNavItem>
-        <SidebarNavItem href="base/tooltips.html">Tooltips</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText="TestItem One">
+        
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faLocationArrow} toggleText="Buttons">
-        <SidebarNavItem href="buttons/buttons.html">Buttons</SidebarNavItem>
-        <SidebarNavItem href="buttons/button-group.html">Buttons Group</SidebarNavItem>
-        <SidebarNavItem href="buttons/dropdowns.html">Dropdowns</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faLocationArrow} toggleText="TestItem Two">
       </SidebarNavGroup>
 
-      <SidebarNavItem icon={faChartPie} href="charts.html">Charts</SidebarNavItem>
+      <SidebarNavItem icon={faChartPie} href="#">Charts</SidebarNavItem>
 
-      <SidebarNavGroup toggleIcon={faFileLines} toggleText="Forms">
-        <SidebarNavItem href="forms/form-control.html">Form Control</SidebarNavItem>
-        <SidebarNavItem href="forms/select.html">Select</SidebarNavItem>
-        <SidebarNavItem href="forms/checks-radios.html">Checks and radios</SidebarNavItem>
-        <SidebarNavItem href="forms/range.html">Range</SidebarNavItem>
-        <SidebarNavItem href="forms/input-group.html">Input group</SidebarNavItem>
-        <SidebarNavItem href="forms/floating-labels.html">Floating labels</SidebarNavItem>
-        <SidebarNavItem href="forms/layout.html">Layout</SidebarNavItem>
-        <SidebarNavItem href="forms/validation.html">Validation</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faFileLines} toggleText="TestItem Three">
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faStar} toggleText="Icons">
-        <SidebarNavItem href="icons/coreui-icons-free.html">CoreUI Icons</SidebarNavItem>
-        <SidebarNavItem href="icons/coreui-icons-brand.html">CoreUI Icons - Brand</SidebarNavItem>
-        <SidebarNavItem href="icons/coreui-icons-flag.html">CoreUI Icons - Flag</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faStar} toggleText="TestItem Four">
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faBell} toggleText="Notifications">
-        <SidebarNavItem href="notifications/alerts.html">Alerts</SidebarNavItem>
-        <SidebarNavItem href="notifications/badge.html">Badge</SidebarNavItem>
-        <SidebarNavItem href="notifications/modals.html">Modals</SidebarNavItem>
-        <SidebarNavItem href="notifications/toasts.html">Toasts</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faBell} toggleText="TestItem Five">        
       </SidebarNavGroup>
 
-      <SidebarNavItem icon={faCalculator} href="widgets.html">
-        Widgets
-        <small className="ms-auto"><Badge bg="info">NEW</Badge></small>
-      </SidebarNavItem>
-
-      <SidebarNavTitle>Extras</SidebarNavTitle>
-
-      <SidebarNavGroup toggleIcon={faStar} toggleText="Pages">
-        <SidebarNavItem icon={faRightToBracket} href="login">Login</SidebarNavItem>
-        <SidebarNavItem icon={faAddressCard} href="register">Register</SidebarNavItem>
-        <SidebarNavItem icon={faBug} href="404.html">Error 404</SidebarNavItem>
-        <SidebarNavItem icon={faBug} href="500.html">Error 500</SidebarNavItem>
-      </SidebarNavGroup>
-
-      <SidebarNavItem icon={faFileLines} href="docs.html">Docs</SidebarNavItem>
-      <SidebarNavItem icon={faLayerGroup} href="https://coreui.io/pro/">Try CoreUI PRO</SidebarNavItem>
+      <SidebarNavItem icon={faFileLines} href="#">Docs</SidebarNavItem>
+      <SidebarNavItem icon={faLayerGroup} href="#">TestItem</SidebarNavItem>
     </ul>
   )
 }
