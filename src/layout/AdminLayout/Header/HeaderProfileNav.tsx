@@ -43,7 +43,7 @@ export default function HeaderProfileNav() {
               width={128}
               height={128}
               className="rounded-circle"
-              src="/assets/img/avatars/8.jpg"
+              src="/assets/voyce.svg"
               alt="user@email.com"
             />
           </div>

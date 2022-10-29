@@ -11,11 +11,10 @@ export default function Breadcrumb() {
       </BSBreadcrumb.Item>
       <BSBreadcrumb.Item
         linkProps={{ className: 'text-decoration-none' }}
-        href="https://getbootstrap.com/docs/4.0/components/BSBreadcrumb/"
+        href="#"
       >
-        Library
+        Dashboard
       </BSBreadcrumb.Item>
-      <BSBreadcrumb.Item active>Data</BSBreadcrumb.Item>
     </BSBreadcrumb>
   )
 }

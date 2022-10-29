@@ -9,6 +9,7 @@ import {
 import Link from 'next/link'
 import { SyntheticEvent, useState } from 'react'
 import { useRouter } from 'next/router'
+import Cookies from 'js-cookie'
 
 const Login: NextPage = () => {
   const router = useRouter()
@@ -19,6 +20,7 @@ const Login: NextPage = () => {
     e.preventDefault()
 
     setSubmitting(true)
+    Cookies.set('user', 'good', { expires: 1, path: '' });
 
     setTimeout(() => {
       setSubmitting(false)
