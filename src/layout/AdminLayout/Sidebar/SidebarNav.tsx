@@ -138,9 +138,7 @@ export default function SidebarNav() {
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faLocationArrow} toggleText="TestItem Two">
-      </SidebarNavGroup>
-
-      <SidebarNavItem icon={faChartPie} href="#">Charts</SidebarNavItem>
+      </SidebarNavGroup>      
 
       <SidebarNavGroup toggleIcon={faFileLines} toggleText="TestItem Three">
       </SidebarNavGroup>

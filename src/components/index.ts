@@ -1,2 +1,14 @@
 /* eslint-disable import/prefer-default-export */
-export { default as ImageFallback } from './Image/ImageFallback'
+import ImageFallback from './Image/ImageFallback'
+import LoginComponent from './login/LoginComponent'
+import RegistrationForm from './register/RegistrationForm'
+import WeekChart from './dashboard/WeekChart'
+import { UserTableComponent } from './tables'
+
+export {
+    ImageFallback,
+    LoginComponent,
+    RegistrationForm,
+    UserTableComponent,
+    WeekChart
+}
