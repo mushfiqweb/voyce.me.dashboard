@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
+import LogoComponent from "../LogoComponent/LogoComponent";
 
 const LoginComponent: React.FC = () => {
   const router = useRouter();
@@ -28,9 +29,12 @@ const LoginComponent: React.FC = () => {
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent">
       <Container>
         <Row className="justify-content-center align-items-center px-3">
+          <br />
           <Col lg={8}>
             <Row>
               <Col md={7} className="bg-white border p-5">
+              <LogoComponent />
+
                 <div className="">
                   <h1>Login</h1>
                   <p className="text-black-50">Sign In to your account</p>
